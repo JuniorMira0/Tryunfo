@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './Form.css';
 
 class Form extends React.Component {
   render() {
@@ -19,107 +20,128 @@ class Form extends React.Component {
     } = this.props;
 
     return (
-      <form>
-        <label htmlFor="name">
-          Name:
-          <input
-            id="name"
-            type="text"
-            data-testid="name-input"
-            value={ cardName }
-            onChange={ onInputChange }
-          />
-        </label>
+      <div className="form">
+        <form>
+          <h1>Adicionar nova carta</h1>
+          <div className="user-box">
+            <label htmlFor="name">
+              Name:
+              <input
+                id="name"
+                type="text"
+                data-testid="name-input"
+                value={ cardName }
+                onChange={ onInputChange }
+              />
+            </label>
+          </div>
 
-        <label htmlFor="description">
-          description:
-          <input
-            id="description"
-            type="textarea"
-            data-testid="description-input"
-            value={ cardDescription }
-            onChange={ onInputChange }
-          />
-        </label>
+          <div className="user-box">
+            <label htmlFor="description">
+              description:
+              <input
+                id="description"
+                type="textarea"
+                data-testid="description-input"
+                value={ cardDescription }
+                onChange={ onInputChange }
+              />
+            </label>
+          </div>
 
-        <label htmlFor="attr1">
-          Attribute 1:
-          <input
-            id="attr1"
-            type="number"
-            data-testid="attr1-input"
-            value={ cardAttr1 }
-            onChange={ onInputChange }
-          />
-        </label>
+          <div className="user-box">
+            <label htmlFor="attr1">
+              Attribute 1:
+              <input
+                id="attr1"
+                type="number"
+                data-testid="attr1-input"
+                value={ cardAttr1 }
+                onChange={ onInputChange }
+              />
+            </label>
+          </div>
 
-        <label htmlFor="attr2">
-          Attribute 2:
-          <input
-            id="attr2"
-            type="number"
-            data-testid="attr2-input"
-            value={ cardAttr2 }
-            onChange={ onInputChange }
-          />
-        </label>
+          <div className="user-box">
+            <label htmlFor="attr2">
+              Attribute 2:
+              <input
+                id="attr2"
+                type="number"
+                data-testid="attr2-input"
+                value={ cardAttr2 }
+                onChange={ onInputChange }
+              />
+            </label>
+          </div>
 
-        <label htmlFor="attr3">
-          Attribute 3:
-          <input
-            id="attr3"
-            type="number"
-            data-testid="attr3-input"
-            value={ cardAttr3 }
-            onChange={ onInputChange }
-          />
-        </label>
+          <div className="user-box">
+            <label htmlFor="attr3">
+              Attribute 3:
+              <input
+                id="attr3"
+                type="number"
+                data-testid="attr3-input"
+                value={ cardAttr3 }
+                onChange={ onInputChange }
+              />
+            </label>
+          </div>
 
-        <label htmlFor="img">
-          Image:
-          <input
-            id="img"
-            type="text"
-            data-testid="image-input"
-            value={ cardImage }
-            onChange={ onInputChange }
-          />
-        </label>
+          <div className="user-box">
+            <label htmlFor="img">
+              Image:
+              <input
+                id="img"
+                type="text"
+                data-testid="image-input"
+                value={ cardImage }
+                onChange={ onInputChange }
+              />
+            </label>
+          </div>
 
-        <label htmlFor="rare">
-          Rarity:
-          <select
-            id="rare"
-            data-testid="rare-input"
-            value={ cardRare }
-            onChange={ onInputChange }
-          >
-            <option value="normal">mormal</option>
-            <option value="raro">raro</option>
-            <option value="muito raro">muito raro</option>
-          </select>
-        </label>
+          <div className="user-box">
+            <label htmlFor="rare">
+              Rarity:
+              <select
+                id="rare"
+                data-testid="rare-input"
+                value={ cardRare }
+                onChange={ onInputChange }
+              >
+                <option value="normal">mormal</option>
+                <option value="raro">raro</option>
+                <option value="muito raro">muito raro</option>
+              </select>
+            </label>
+          </div>
 
-        <label htmlFor="trunfo">
-          Trunfo:
-          <input
-            id="trunfo"
-            type="checkbox"
-            data-testid="trunfo-input"
-            checked={ cardTrunfo }
-            onChange={ onInputChange }
-          />
-        </label>
+          <div className="user-box">
+            <label htmlFor="trunfo">
+              Trunfo:
+              <input
+                id="trunfo"
+                type="checkbox"
+                data-testid="trunfo-input"
+                checked={ cardTrunfo }
+                onChange={ onInputChange }
+              />
+            </label>
+          </div>
 
-        <button
-          data-testid="save-button"
-          type="button"
-          disabled={ isSaveButtonDisabled }
-          onClick={ onSaveButtonClick }
-        >
-          Salvar
-        </button>
-      </form>
+          <div>
+            <button
+              data-testid="save-button"
+              type="button"
+              disabled={ isSaveButtonDisabled }
+              onClick={ onSaveButtonClick }
+            >
+              Salvar
+            </button>
+          </div>
+        </form>
+      </div>
     );
   }
 }
