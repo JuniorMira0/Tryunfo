@@ -126,6 +126,7 @@ class App extends React.Component {
       trunfo,
       hasTrunfo,
       isSaveButtonDisabled,
+      newCards,
     } = this.state;
     const { onInputChange } = this;
     return (
@@ -156,6 +157,18 @@ class App extends React.Component {
           cardTrunfo={ trunfo }
           hasTrunfo={ hasTrunfo }
         />
+        {newCards.map((card) => (
+          <Card
+            key={ card.name }
+            cardName={ card.name }
+            cardDescription={ card.description }
+            cardAttr1={ card.attr1 }
+            cardAttr2={ card.attr2 }
+            cardAttr3={ card.attr3 }
+            cardImage={ card.img }
+            cardRare={ card.rare }
+            cardTrunfo={ card.trunfo }
+          />))}
       </div>
     );
   }
