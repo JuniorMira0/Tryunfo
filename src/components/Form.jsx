@@ -28,6 +28,7 @@ class Form extends React.Component {
               Name:
               <input
                 id="name"
+                name="name"
                 type="text"
                 data-testid="name-input"
                 value={ cardName }
@@ -41,6 +42,7 @@ class Form extends React.Component {
               description:
               <input
                 id="description"
+                name="description"
                 type="textarea"
                 data-testid="description-input"
                 value={ cardDescription }
@@ -54,6 +56,7 @@ class Form extends React.Component {
               Attribute 1:
               <input
                 id="attr1"
+                name="attr1"
                 type="number"
                 data-testid="attr1-input"
                 value={ cardAttr1 }
@@ -67,6 +70,7 @@ class Form extends React.Component {
               Attribute 2:
               <input
                 id="attr2"
+                name="attr2"
                 type="number"
                 data-testid="attr2-input"
                 value={ cardAttr2 }
@@ -80,6 +84,7 @@ class Form extends React.Component {
               Attribute 3:
               <input
                 id="attr3"
+                name="attr3"
                 type="number"
                 data-testid="attr3-input"
                 value={ cardAttr3 }
@@ -93,6 +98,7 @@ class Form extends React.Component {
               Image:
               <input
                 id="img"
+                name="img"
                 type="text"
                 data-testid="image-input"
                 value={ cardImage }
@@ -101,27 +107,27 @@ class Form extends React.Component {
             </label>
           </div>
 
-          <div className="user-box">
-            <label htmlFor="rare">
-              Rarity:
-              <select
-                id="rare"
-                data-testid="rare-input"
-                value={ cardRare }
-                onChange={ onInputChange }
-              >
-                <option value="normal">mormal</option>
-                <option value="raro">raro</option>
-                <option value="muito raro">muito raro</option>
-              </select>
-            </label>
-          </div>
+          <label htmlFor="rare">
+            Rarity:
+            <select
+              id="rare"
+              name="rare"
+              data-testid="rare-input"
+              value={ cardRare }
+              onChange={ onInputChange }
+            >
+              <option value="normal">mormal</option>
+              <option value="raro">raro</option>
+              <option value="muito raro">muito raro</option>
+            </select>
+          </label>
 
           <div className="user-box">
             <label htmlFor="trunfo">
               Trunfo:
               <input
                 id="trunfo"
+                name="trunfo"
                 type="checkbox"
                 data-testid="trunfo-input"
                 checked={ cardTrunfo }
