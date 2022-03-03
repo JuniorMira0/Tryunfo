@@ -175,3 +175,5 @@ class App extends React.Component {
 }
 
 export default App;
+
+// requisitos 6, 7 com auxilio de Lucas Cardoso - software engineer - Turma 5
