@@ -1,71 +1,9 @@
-### Termos e acordos
-
-Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e Conduta e do Manual da Pessoa Estudante da Trybe.
-
----
-
 # Boas vindas ao repositório do projeto Tryunfo!
 
-Você já usa o GitHub diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Fique atento a cada passo, e se tiver qualquer dúvida, nos envie por _Slack_! #vqv 🚀
+Aqui você vai encontrar os detalhes de como foi o desenvolvimento do projeto.
 
-Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu projeto a partir deste repositório, utilizando uma branch específica e um _Pull Request_ para colocar seus códigos.
-
-
-## Agradecimentos
-
-Pessoas que contribuíram com feedbacks no programa de _beta testers_ desse projeto:
-
-[@alanmdf](https://github.com/alanmdf), [@Aleilton](https://github.com/Aleilton), [@felipeventorim](https://github.com/felipeventorim), [@gusttavocaruso](https://github.com/gusttavocaruso), [@junglejf](https://github.com/junglejf) , [@JVictorC](https://github.com/JVictorC), [@lcds90](https://github.com/lcds90), [@Murilo-Rainho](https://github.com/Murilo-Rainho), [@rafaelromanoz](https://github.com/rafaelromanoz), [@rogeriop1990cv](https://github.com/rogeriop1990cv), [@RoyMusthang](https://github.com/RoyMusthang) e [@vdionysio](https://github.com/vdionysio)
-
----
-
-
-# Sumário
-
-- [Boas vindas ao repositório do projeto Tryunfo!](#boas-vindas-ao-repositório-do-projeto-tryunfo)
-- [Sumário](#sumário)
-- [Habilidades](#habilidades)
-- [Entregáveis](#entregáveis)
-  - [O que deverá ser desenvolvido](#o-que-deverá-ser-desenvolvido)
-  - [Desenvolvimento](#desenvolvimento)
-  - [Data de Entrega](#data-de-entrega)
-- [Observações técnicas](#observações-técnicas)
-  - [Renderização Condicional](#renderização-condicional)
-- [Instruções para entregar seu projeto](#instruções-para-entregar-seu-projeto)
-  - [Antes de começar a desenvolver](#antes-de-começar-a-desenvolver)
-  - [Durante o desenvolvimento](#durante-o-desenvolvimento)
-  - [Depois de terminar o desenvolvimento (opcional)](#depois-de-terminar-o-desenvolvimento-opcional)
-- [Como desenvolver](#como-desenvolver)
-  - [ESLint e Stylelint](#eslint-e-stylelint)
-  - [Execução de testes unitários](#execução-de-testes-unitários)
-- [Informações sobre o Super Trunfo](#informações-sobre-o-super-trunfo)
-- [Criando, lendo, atualizando e apagando informações](#criando-lendo-atualizando-e-apagando-informações)
-- [Requisitos do projeto](#requisitos-do-projeto)
-  - [1. Crie o formulário que será usado para adicionar cartas ao baralho](#1-crie-o-formulário-que-será-usado-para-adicionar-cartas-ao-baralho)
-  - [2. Adicione as props necessárias ao componente de formulário](#2-adicione-as-props-necessárias-ao-componente-de-formulário)
-  - [3. Crie e renderize o componente Card com as props necessárias](#3-crie-e-renderize-o-componente-card-com-as-props-necessárias)
-  - [4. Crie o preview da carta que está sendo criada pelo formulário](#4-crie-o-preview-da-carta-que-está-sendo-criada-pelo-formulário)
-  - [5. Faça a validação do botão de Salvar no formulário](#5-faça-a-validação-do-botão-de-salvar-no-formulário)
-  - [6. Crie a função do botão salvar](#6-crie-a-função-do-botão-salvar)
-  - [7. Crie a validação do Super Trunfo](#7-crie-a-validação-do-super-trunfo)
-  - [8. Exiba a lista de cartas que estão salvas no estado](#8-exiba-a-lista-de-cartas-que-estão-salvas-no-estado)
-  - [9. Crie um botão para remover uma carta do baralho](#9-crie-um-botão-para-remover-uma-carta-do-baralho)
-- [Requisitos bônus](#requisitos-bônus)
-  - [10. Crie o filtro pelo nome da carta](#10-crie-o-filtro-pelo-nome-da-carta)
-  - [11. Crie o filtro por raridade da carta](#11-crie-o-filtro-por-raridade-da-carta)
-  - [12. Crie o filtro de Super Trunfo](#12-crie-o-filtro-de-super-trunfo)
-- [Requisitos não avaliativos](#requisitos-não-avaliativos)
-  - [Regras do Jogo](#regras-do-jogo)
-  - [O que será necessário](#o-que-será-necessário)
-  - [13. Iniciar o jogo](#13-iniciar-o-jogo)
-  - [14. Criar botão Próxima Carta](#14-criar-botão-próxima-carta)
-  - [15. Recomeçar o jogo](#15-recomeçar-o-jogo)
-- [Avisos Finais](#avisos-finais)
-
----
 
 # Habilidades
-Neste projeto, verificamos se voce é capaz de:
 
   * Ler o estado de um componente e usá-lo para alterar o que exibimos no browser
 
@@ -81,11 +19,9 @@ Neste projeto, verificamos se voce é capaz de:
 
 ---
 
-# Entregáveis
+## O que foi desenvolvido
 
-## O que deverá ser desenvolvido
-
-Neste projeto você vai desenvolver um jogo no estilo Super Trunfo! Ao utilizar essa aplicação uma pessoa usuária deverá ser capaz de:
+Neste projeto, fomos responsáveis por criar um jogo parecido com o Super Trunfo. A diferença é que podemos criar a carta que quisermos, respeitando sempre as regras de que o deck pode conter apenas um único Super Trunfo e o valor dos requisitos, somados, não podem ultrapassar o valor de 210.
 
   * Criar um baralho, com o tema livre;
 
@@ -95,241 +31,13 @@ Neste projeto você vai desenvolver um jogo no estilo Super Trunfo! Ao utilizar 
 
   * Jogar com o baralho criado.
 
-Para entregar o seu projeto você deverá criar um Pull Request neste repositório.
-
-Lembre-se que você pode consultar nosso conteúdo sobre Git & GitHub no Course sempre que precisar
-
 ### Protótipo do projeto
 
 Você pode acessar um protótipo no link abaixo:
 
 https://www.figma.com/file/psAYBgwjQ1pQqBe3wJvljt/Tryunfo
 
-## Desenvolvimento
-
-Você deve desenvolver uma aplicação em React com manipulação de estados em classes. Essa aplicação simulará um jogo de **Super Trunfo**, desde a criação das cartas do seu baralho até a funcionalidade de jogar.
-
-Na renderização das cartas, sua aplicação deverá possuir três filtros de listagem de cartas: filtro por **nome**, por **raridade** e por **Super Trunfo**. Os filtros **nome** e **raridade** são acumulativos. O filtro **Super Trunfo** funciona de forma independente.
-
-O tema do seu baralho é **livre**, então explore a sua criatividade! Mas use seu bom senso para a criação do seu baralho. Lembre-se das normas de conduta e ética no Manual de Estudante.
-
-## Data de Entrega
-
-  - Projeto individual.
-
-  - Serão dois dias de projeto.
-  
-  - Data de entrega para avaliação final do projeto: `03/03/2022 14:00`.
-
----
-# Observações técnicas
-
-## Renderização condicional
-
-Em alguns requisitos será necessária a utilização de renderização condicional. Você pode verificar a documentação do React [Renderização Condicional](https://pt-br.reactjs.org/docs/conditional-rendering.html).
-
-Este comportamento é utilizado no React para renderizar, ou não, determinado componente de acordo com uma condição booleana.
-
-No exemplo abaixo, o estado `isActiveButton` começa como `false`, e ao clicar no botão `Clique em mim!`, mudamos esse estado para `true`.
-Na condição da renderização, quando o estado for `false`, renderizamos o paragrafo `Não está ativo!` e quando for `true`, renderizamos o paragrafo `Está ativo!`.
-
-```js
-import React from "react"
-
-class Componente extends React.Component {
- constructor() {
-  super();
-  this.state = {
-    isActiveButton: false,
-  };
- }
-
-  render() {
-    const { isActiveButton } = this.state;
-    return (
-      <div>
-        <button onClick={() => this.setState({isActiveButton: true})}>Clique em mim!</button>
-        {
-          isActiveButton ? <p>Está ativo!</p> : <p>Não está ativo!</p>
-        }
-      </div>
-    )
-  }
-}
-```
-
-No caso acima, temos duas possibilidades, ativo ou não, ou seja, duas renderizações. Mas se for de apenas uma renderização, como por exemplo, renderizar somente se o tamanho do array for maior do que 0, podemos utilizar o `&&`: 
-
-```js
-...
-{
-  array.length > 0 && <p>Array não vazio!</p>
-}
-...
-```
-
----
-# Instruções para entregar seu projeto
-
-## Antes de começar a desenvolver
-
-1. Clone o repositório
-  * `git clone git@github.com:tryber/sd-019-b-project-tryunfo.git`.
-  * Entre na pasta do repositório que você acabou de clonar:
-    * `cd sd-019-b-project-tryunfo`
-
-2. Instale as dependências e inicialize o projeto
-  * Instale as dependências:
-    * `npm install`
-  * Inicialize o projeto:
-    * `npm start` (uma nova página deve abrir no seu navegador com um texto simples)
-  * Verifique que os testes estão executando:
-    * `npm test` (os testes devem rodar e falhar)
-
-3. Crie uma branch a partir da branch `master`
-
-  * Verifique que você está na branch `master`
-    * Exemplo: `git branch`
-  * Se não estiver, mude para a branch `master`
-    * Exemplo: `git checkout master`
-  * Agora, crie uma branch onde você vai guardar os commits do seu projeto
----
-
-## Durante o desenvolvimento
-
-* Faça `commits` das alterações que você fizer no código regularmente
-
-* Lembre-se de sempre após um (ou alguns) `commits` atualizar o repositório remoto
-
-* Os comandos que você utilizará com mais frequência são:
-  1. `git status` _(para verificar o que está em vermelho - fora do stage - e o que está em verde - no stage)_
-  2. `git add` _(para adicionar arquivos ao stage do Git)_
-  3. `git commit` _(para criar um commit com os arquivos que estão no stage do Git)_
-  4. `git push -u origin nome-da-branch` _(para enviar o commit para o repositório remoto na primeira vez que fizer o `push` de uma nova branch)_
-  5. `git push` _(para enviar o commit para o repositório remoto após o passo anterior)_
-
----
-
-## Depois de terminar o desenvolvimento (opcional)
-
-Para **"entregar"** seu projeto, siga os passos a seguir:
-
-* Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque seus colegas
-  * No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**
-  * No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**
-  * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-00`
-
----
-
-# Como desenvolver
-
-## ESLint e Stylelint
-
-Para garantir a qualidade do código, vamos utilizar neste projeto os linters `ESLint` e `Stylelint`.
-Assim o código estará alinhado com as boas práticas de desenvolvimento, sendo mais legível e de fácil manutenção! Para rodá-los localmente no projeto, execute os comandos abaixo:
-
-```bash
-npm run lint
-npm run lint:styles
-```
-
-Em caso de dúvidas, confira o material do course sobre [ESLint e Stylelint](https://app.betrybe.com/course/real-life-engineer/eslint).
-
-⚠️ Lembre-se que o seu projeto só será avaliado se estiver passando pelos **checks** dos **linters**.
-
----
-
-## Execução de testes unitários
-
-Vamos utilizar [React Testing Library](https://testing-library.com/docs/react-testing-library/intro) para execução dos testes unitários.
-
-Esse _framework_ de testes utiliza algumas marcações no código para verificar a solução proposta, uma dessas marcações é o atributo `data-testid` e faremos uso dele aqui.
-
-Na descrição dos requisitos (logo abaixo) será pedido que seja feita a adição de atributos `data-testid` nos elementos _HTML_. Vamos a um exemplo para deixar claro essa configuração:
-
-Se o requisito pedir "crie um botão e adicione o id de teste (ou `data-testid`) com o valor `my-action`, você pode criar:
-
-```html
-<button data-testid="my-action"></button>
-```
-
-ou
-
-```html
-<a data-testid="my-action"></a>
-```
-
-ou seja, o atributo `data-testid="my-action"` servirá para o React Testing Library(RTL) identificar o elemento e dessa forma, conseguiremos realizar testes unitários focados no comportamento da aplicação.
-
-Em alguns requisitos, utilizamos o `getByRole` para poder selecionar os elementos de forma semântica. Portanto atente-se às instruções de cada requisito. Por exemplo, se o requisito pedir explicitamente um `button`, você deverá utilizar exatamente esse elemento.
-
-Afim de verificar a solução proposta, você pode executar todos os testes unitários localmente, basta executar:
-
-```bash
-npm test
-```
-
-### Dica: desativando testes
-
-Especialmente no início, quando a maioria dos testes está falhando, a saída após executar os testes é extensa. Você pode desabilitar temporariamente um teste utilizando a função `skip` junto à função `it`. Como o nome indica, esta função "pula" um teste:
-
-```js
-it.skip("Será validado se o campo de filtro por nome renderiza na tela", () => {
-  render(<App />)
-  const filterNameInput = screen.getByTestId(/name-filter/i);
-  expect(filterNameInput).toBeInTheDocument();
-});
-```
-![image](skip-image.png)
-
-Uma estratégia é pular todos os testes no início e ir implementando um teste de cada vez, removendo dele a função `skip`.
-
-Você também pode rodar apenas um arquivo de teste, por exemplo:
-
-```bash
-npm test 01.Form.test.js
-```
-
-ou
-
-```bash
-npm test 01.Form
-```
-
-Uma outra forma para contornar esse problema é a utilização da função `.only` após o `it`. Com isso, será possível que apenas um requisito rode localmente e seja avaliado.
-
-```js
-it.only("Será validado se o campo de filtro por nome renderiza na tela", () => {
-  render(<App />)
-  const filterNameInput = screen.getByTestId(/name-filter/i);
-  expect(filterNameInput).toBeInTheDocument();
-});
-```
-![image](only-image.png)
-
-
----
-
-# Informações sobre o Super Trunfo
-O Super Trunfo é um jogo de cartas que ficou muito popular no Brasil entre as décadas de 80 e 90, mas que faz bastante sucesso até hoje. Suas regras são bastante simples, por isso ele é considerado um jogo fácil de jogar. Apesar de ter regras simples, cada baralho  de Super Trunfo pode ter um tema diferente, o que o torna um jogo bastante divertido.
-
-Originalmente, o jogo de Super Trunfo é formado por um baralho de 32 cartas. Cada carta representa um item relacionado ao tema do jogo. Em cada carta também existe uma lista com características daquele item e cada característica possui um valor numérico. 
-
-Para começar o jogo, as cartas devem ser embaralhadas e divididas igualmente para cada participante. Em cada rodada cada pessoa pega somente a primeira carta do seu monte. Na primeira rodada uma pessoa escolhe qual característica quer comparar com as cartas das outras pessoas que estão jogando. Ganha quem tiver o maior número nessa característica. A pessoa que ganhou a rodada recebe as cartas das outras pessoas e escolhe qual característica quer comparar na próxima rodada. O jogo termina quando alguma pessoa tiver todas as cartas do baralho.
-
-Em cada baralho existe uma (e somente uma) carta Super Trunfo. Essa carta ganha de todas as outras cartas do baralho, independentemente dos valores das características.
-
-O jogo de Super Trunfo pode ser feito com praticamente qualquer tema, mas tradicionalmente os mais comuns são: carros, países, cidades ou animais.
-
-# Criando, lendo, atualizando e apagando informações
-Quando estamos lidando com informações, temos 4 operações principais: __Create__ (criar), __Read__ (ler), __Update__ (atualizar) e __Delete__ (apagar). Com essas quatro operações, formamos o acrônimo CRUD. Esse acrônimo é um termo que será bastante utilizado daqui para frente na sua jornada como pessoa desenvolvedora.
-
-Nesse projeto vamos começar a lidar um pouco mais com essas operações, mas não vamos fazer todas elas. Você precisará criar, ler e apagar informações, mas não precisará desenvolver a função de editar por enquanto. Não se preocupe, pois no futuro, iremos voltar a implementar essas operações, e nos próximos projetos você fará um CRUD completo.
-
 # Requisitos do projeto
-:warning: **PULL REQUESTS COM ISSUES DE LINTER NÃO SERÃO AVALIADAS.** :warning:
-
-:warning: **Os gifs são meramente ilustrativos para visualizar o fluxo da aplicação, os nomes devem seguir os requisitos e não o gif.** :warning:
 
 ## 1. Crie o formulário que será usado para adicionar cartas ao baralho
 Crie um formulário que será utilizado para criar as cartas do seu baralho.
@@ -757,15 +465,5 @@ Você já criou o baralho do seu Tryunfo. Agora você pode criar uma funcionalid
   * Ao ser clicar, no botão `Embaralhar cartas` o baralho deve ser embaralhado novamente e o estado que controla a posição da carta exibida deve ser `0` novamente.
 
   ![requisito-15](images/requisito-15.png)
-
----
-
-# Avisos Finais
-
-Ao finalizar e submeter o projeto, não se esqueça de avaliar sua experiência preenchendo o formulário. Leva menos de 3 minutos!
-
-Link: [FORMULÁRIO DE AVALIAÇÃO DE PROJETO](https://bit.ly/2OfLJPn)
-
-O avaliador automático não necessariamente avalia seu projeto na ordem em que os requisitos aparecem no readme. Isso acontece para deixar o processo de avaliação mais rápido. Então, não se assuste se isso acontecer, ok?
 
 ---
